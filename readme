@@ -1,2 +1,14 @@
 readme
-changes1
+
+requirements to run the system:
+
+1. docker : run the following command on the terminal after installing docker and the postgres image
+
+docker run --name postgres-container -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=mysecretpassword -e POSTGRES_DB=DB -d -p 127.0.0.1:5432:5432 postgres
+
+this initialises the DB with the following parameters
+DB name : DB
+user : postgres
+password : mysecretpassword
+host: localhost
+port : 5432

@@ -12,3 +12,8 @@ user : postgres
 password : mysecretpassword
 host: localhost
 port : 5432
+
+
+
+Indexes
+1. ALTER TABLE loginData ADD CONSTRAINT unique_userName_lower UNIQUE (LOWER(userName));
